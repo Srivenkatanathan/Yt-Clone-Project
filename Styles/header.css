@@ -1,0 +1,255 @@
+.search-box{
+  flex: 1;
+  height: 40px;
+  padding-left: 10px;
+  border-width: 1px;
+  border-color: rgb(214, 210, 210);
+  border-radius: 2px;
+  border-style: solid;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  width: 0;
+}
+
+.search-box::placeholder{
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.hamburger-icon{
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.youtube-icon{
+  height: 20px;
+}
+
+.search-icon{
+  height: 25px;
+  width: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search-icon-btn{
+  height: 44px;
+  display: flex;
+  align-items: center;
+  border-color: rgb(214, 210, 210);
+  background-color: rgba(247, 247, 247, 1);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.search-icon-btn .tooltip{
+  position: absolute;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  bottom: -50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-icon-btn:hover .tooltip{
+  opacity: 1;
+}
+
+.voice-search-icon{
+  height: 25px;
+  width: 30px;
+}
+
+.voice-search-icon-btn{
+  height: 44px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 22px;
+  background-color: rgba(248, 248, 248, 1);
+  position: relative;
+  
+}
+
+.voice-search-icon-btn .tooltip{
+  position: absolute;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 2px;
+  bottom: -50px;
+  left: -50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.voice-search-icon-btn:hover .tooltip{
+  opacity: 1;
+}
+
+.upload-icon{
+  height: 25px;
+}
+
+.upload-icon-div{
+  position: relative;
+}
+
+.upload-icon-div .tooltip{
+  position: absolute;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  bottom: -50px;
+  left: -12px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.upload-icon-div:hover .tooltip{
+  opacity: 1;
+}
+
+.yt-apps-icon{
+  height: 25px;
+}
+
+.yt-apps-icon-div{
+  position: relative;
+}
+
+.yt-apps-icon-div .tooltip{
+  position: absolute;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  white-space: nowrap;
+  left: -30px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.yt-apps-icon-div:hover .tooltip{
+  opacity: 1;
+}
+
+.notifications-icon{
+  height: 25px;
+}
+
+.notifications-icon-container{
+  position: relative;
+}
+
+.notifications-icon-container .tooltip{
+  position: absolute;
+  background-color: rgba(96, 96, 96, 0.9);
+  color: white;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 2px;
+  left: -25px;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.notifications-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+.notifications-icon-count{
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.channel-pic{
+  width: 32px;
+  border-radius: 16px;
+}
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 0.8px;
+  border-bottom-color: rgb(222, 222, 222);
+  border-bottom-style: solid;
+  z-index: 100;
+
+}
+
+.left-position{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.middle-position{
+  max-width: 500px;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.right-position{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
